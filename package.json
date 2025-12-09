@@ -1,0 +1,39 @@
+{
+  "name": "findtrader-india",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react-dom": "^19.2.0",
+    "react": "^19.2.0",
+    "@google/genai": "^1.30.0",
+    "lucide-react": "^0.555.0",
+    "recharts": "^3.5.1",
+    "react-markdown": "^10.1.0",
+    "framer-motion": "^12.23.24",
+    "react-router-dom": "^7.9.6",
+    "firebase": "^12.6.0",
+    "fs": "^0.0.1-security",
+    "buffer": "^6.0.3",
+    "os": "^0.1.2",
+    "cors": "^2.8.5",
+    "path": "^0.12.7",
+    "busboy": "^1.6.0",
+    "firebase-functions": "^7.0.0",
+    "@google-cloud/kms": "^5.2.1",
+    "firebase-admin": "^13.6.0",
+    "@splinetool/react-spline": "^4.0.0",
+    "@splinetool/runtime": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.14.0",
+    "@vitejs/plugin-react": "^5.0.0",
+    "typescript": "~5.8.2",
+    "vite": "^6.2.0"
+  }
+}

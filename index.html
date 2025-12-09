@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FindTrader India</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Outfit', 'sans-serif'],
+            },
+            colors: {
+              dark: {
+                900: '#050507',
+                800: '#0a0a0f',
+                700: '#12121a',
+                600: '#1c1c2e',
+              },
+              neon: {
+                cyan: '#00f3ff',
+                purple: '#bc13fe',
+                green: '#0aff60',
+                pink: '#ff0099',
+              }
+            },
+            boxShadow: {
+              'neon-cyan': '0 0 10px rgba(0, 243, 255, 0.5), 0 0 20px rgba(0, 243, 255, 0.3)',
+              'neon-purple': '0 0 10px rgba(188, 19, 254, 0.5), 0 0 20px rgba(188, 19, 254, 0.3)',
+              'neon-green': '0 0 10px rgba(10, 255, 96, 0.5), 0 0 20px rgba(10, 255, 96, 0.3)',
+              'neon-pink': '0 0 10px rgba(255, 0, 153, 0.5), 0 0 20px rgba(255, 0, 153, 0.3)',
+              'glass': '0 8px 32px 0 rgba(31, 38, 135, 0.37)',
+            },
+            animation: {
+              'pulse-neon': 'pulse-neon 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+              'tilt': 'tilt 10s infinite linear',
+            },
+            keyframes: {
+              'pulse-neon': {
+                '0%, 100%': { opacity: 1 },
+                '50%': { opacity: .7 },
+              },
+              tilt: {
+                '0%, 50%, 100%': { transform: 'rotate(0deg)' },
+                '25%': { transform: 'rotate(1deg)' },
+                '75%': { transform: 'rotate(-1deg)' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      /* Premium Dark Scrollbar with Neon Glow */
+      ::-webkit-scrollbar {
+        width: 4px; /* Slim width */
+        height: 4px; /* Slim height for horizontal */
+      }
+      ::-webkit-scrollbar-track {
+        background: #050507;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #00f3ff;
+        border-radius: 10px;
+        box-shadow: 0 0 8px 1px rgba(0, 243, 255, 0.7); /* Neon Glow */
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #fff;
+        box-shadow: 0 0 12px 2px rgba(0, 243, 255, 0.9);
+      }
+      
+      .glass-card {
+        background: rgba(18, 18, 26, 0.6);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.05);
+      }
+      
+      .glass-card:hover {
+        border-color: rgba(0, 243, 255, 0.3);
+        box-shadow: 0 0 20px rgba(0, 243, 255, 0.1);
+      }
+
+      .text-glow {
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0",
+    "recharts": "https://aistudiocdn.com/recharts@^3.5.1",
+    "react-markdown": "https://aistudiocdn.com/react-markdown@^10.1.0",
+    "framer-motion": "https://aistudiocdn.com/framer-motion@^12.23.24",
+    "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.9.6",
+    "firebase/app": "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js",
+    "firebase/auth": "https://www.gstatic.com/firebasejs/10.8.0/firebase-auth.js",
+    "firebase/firestore": "https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js",
+    "firebase/storage": "https://www.gstatic.com/firebasejs/10.8.0/firebase-storage.js",
+    "firebase/analytics": "https://www.gstatic.com/firebasejs/10.8.0/firebase-analytics.js",
+    "firebase/": "https://aistudiocdn.com/firebase@^12.6.0/",
+    "fs": "https://aistudiocdn.com/fs@^0.0.1-security",
+    "buffer": "https://aistudiocdn.com/buffer@^6.0.3",
+    "os": "https://aistudiocdn.com/os@^0.1.2",
+    "cors": "https://aistudiocdn.com/cors@^2.8.5",
+    "path": "https://aistudiocdn.com/path@^0.12.7",
+    "busboy": "https://aistudiocdn.com/busboy@^1.6.0",
+    "firebase-functions": "https://aistudiocdn.com/firebase-functions@^7.0.0",
+    "@google-cloud/kms": "https://aistudiocdn.com/@google-cloud/kms@^5.2.1",
+    "firebase-admin": "https://aistudiocdn.com/firebase-admin@^13.6.0",
+    "@splinetool/react-spline": "https://aistudiocdn.com/@splinetool/react-spline@^4.0.0",
+    "@splinetool/runtime": "https://aistudiocdn.com/@splinetool/runtime@^1.0.0"
+  }
+}
+</script>
+</head>
+  <body class="bg-[#050507] text-gray-100 transition-colors duration-300">
+    <div id="root"></div>
+  </body>
+</html>
